@@ -8,18 +8,13 @@ export function Organizers() {
       <div className="shell">
         <SectionHeading id="organizer-title" title="Organizing Committee" />
         <ul className="organizer-grid">
-          {organizers.map(({ name, affiliation, country, initials, bio, source }) => (
+          {organizers.map(({ name, affiliation, country, initials, bio }) => (
             <li key={name} className="person-card">
               <div className="person-heading">
                 <span className="initials" aria-hidden="true">{initials}</span>
                 <div><h3>{name}</h3><p className="person-affiliation">{affiliation}, {country}</p></div>
               </div>
               <p className="person-bio">{bio}</p>
-              {source && (
-                <a className="person-source" href={source.url} aria-label={source.label + ' for ' + name}>
-                  {source.label}
-                </a>
-              )}
             </li>
           ))}
         </ul>
