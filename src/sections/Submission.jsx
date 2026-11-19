@@ -2,11 +2,13 @@ import { ClipboardList, FileText, Ticket } from 'lucide-react';
 import SectionHeading from '../components/SectionHeading.jsx';
 import { links, submission } from '../data/workshop.js';
 
-function Resource({ icon: Icon, label, url, pending }) {
+function Resource({ icon: Icon, label, url }) {
+  if (!url) return null;
+
   return (
     <li>
       <Icon size={20} aria-hidden="true" />
-      {url ? <a href={url}>{label}</a> : <span>{pending}</span>}
+      <a href={url}>{label}</a>
     </li>
   );
 }
@@ -44,10 +46,12 @@ export default function Submission() {
             {links.submission
               ? <a className="button button-accent" href={links.submission}>Submit via HotCRP</a>
               : <p className="pending">Submission link coming soon</p>}
-            <ul className="resource-list">
-              <Resource icon={FileText} label="ACM paper template" url={links.template} pending="Template link coming soon" />
-              <Resource icon={Ticket} label="Workshop registration" url={links.registration} pending="Registration link coming soon" />
-            </ul>
+            {(links.template || links.registration) && (
+              <ul className="resource-list">
+                <Resource icon={FileText} label="ACM paper template" url={links.template} />
+                <Resource icon={Ticket} label="Workshop registration" url={links.registration} />
+              </ul>
+            )}
           </aside>
         </div>
       </div>
