@@ -1,0 +1,56 @@
+import { ClipboardList, FileText, Ticket } from 'lucide-react';
+import SectionHeading from '../components/SectionHeading.jsx';
+import { links, submission } from '../data/workshop.js';
+
+function Resource({ icon: Icon, label, url, pending }) {
+  return (
+    <li>
+      <Icon size={20} aria-hidden="true" />
+      {url ? <a href={url}>{label}</a> : <span>{pending}</span>}
+    </li>
+  );
+}
+
+export default function Submission() {
+  return (
+    <section id="submission" className="section" aria-labelledby="submission-title" tabIndex={-1}>
+      <div className="shell">
+        <div className="section-intro">
+          <SectionHeading id="submission-title" title="Submission Guidelines" />
+          <div className="section-copy">{submission.notice && <p>{submission.notice}</p>}</div>
+        </div>
+        <div className="submission-layout">
+          <div>
+            <div className="paper-grid">
+              {submission.categories.map(([name, length, description]) => (
+                <article className="paper-card" key={name}>
+                  <FileText className="icon-tile" aria-hidden="true" />
+                  <h3>{name}</h3>
+                  <p className="page-limit"><strong>{length}</strong>, excluding references</p>
+                  <p>{description}</p>
+                </article>
+              ))}
+            </div>
+            <dl className="submission-guidance">
+              {submission.guidance.map(([name, description]) => (
+                <div key={name}><dt>{name}</dt><dd>{description}</dd></div>
+              ))}
+            </dl>
+          </div>
+          <aside className="submit-panel" aria-labelledby="submit-panel-title">
+            <ClipboardList className="icon-tile" aria-hidden="true" />
+            <h3 id="submit-panel-title">Submit Your Paper</h3>
+            {!links.submission && <p>{submission.platform}</p>}
+            {links.submission
+              ? <a className="button button-accent" href={links.submission}>Submit your paper</a>
+              : <p className="pending">Submission link coming soon</p>}
+            <ul className="resource-list">
+              <Resource icon={FileText} label="ACM paper template" url={links.template} pending="Template link coming soon" />
+              <Resource icon={Ticket} label="Workshop registration" url={links.registration} pending="Registration link coming soon" />
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+  );
+}
