@@ -30,7 +30,7 @@ The build pre-renders the workshop into `dist/index.html` for indexing and first
 
 ## Edit workshop content
 
-Update [`src/data/workshop.js`](src/data/workshop.js) for event details, dates, CFP topics, paper categories, review guidance, program entries, organizer names and affiliations, and external links. Use YYYY-MM-DD for milestone dates and HH:mm for program start and end times. Edit `workshopDate` to update the workshop milestone, hero, program, footer, and search metadata together.
+Update [`src/data/workshop.js`](src/data/workshop.js) for event details, dates, CFP topics, paper categories, review guidance, program entries, organizer names, affiliations, bios, and external links. Use YYYY-MM-DD for milestone dates and HH:mm for program start and end times. Edit `workshopDate` to update the workshop milestone, hero, program, footer, and search metadata together.
 
 Set `links.submission`, `links.registration`, and `links.template` to their verified public URLs as they become available. Empty values render a “coming soon” message. Update the dates and submission notices once the organizers confirm them. Update the preliminary program once the schedule is confirmed.
 

@@ -214,61 +214,71 @@ export const program = [
 ];
 
 export const organizers = [
-  [
-    "Prof. Varun Dutt",
-    "IIT Mandi",
-    "India",
-    "VD"
-  ],
-  [
-    "Prof. K. V. Uday",
-    "IIT Mandi",
-    "India",
-    "KU"
-  ],
-  [
-    "Prof. Tad Gonsalves",
-    "Sophia University",
-    "Japan",
-    "TG"
-  ],
-  [
-    "Prof. Yutaka Arakawa",
-    "Kyushu University",
-    "Japan",
-    "YA"
-  ],
-  [
-    "Arjun Mehra",
-    "IIT Mandi",
-    "India",
-    "AM"
-  ],
-  [
-    "Dr. Kulbhushan Chand",
-    "IIT Mandi",
-    "India",
-    "KC"
-  ],
-  [
-    "Sonam",
-    "IIT Mandi",
-    "India",
-    "S"
-  ],
-  [
-    "Srishti Sharma",
-    "IIT Mandi",
-    "India",
-    "SS"
-  ],
-  [
-    "Malika Nagpal",
-    "IIT Mandi",
-    "India",
-    "MN"
-  ]
+  {
+    "name": "Prof. Varun Dutt",
+    "affiliation": "IIT Mandi",
+    "country": "India",
+    "initials": "VD",
+    "bio": "Varun Dutt is a professor in the School of Computing and Electrical Engineering and principal investigator of the Applied Cognitive Science Lab. His research spans cognitive modeling, human–computer interaction, and decision-making."
+  },
+  {
+    "name": "Prof. K. V. Uday",
+    "affiliation": "IIT Mandi",
+    "country": "India",
+    "initials": "KU",
+    "bio": "K. V. Uday is a professor in the School of Civil and Environmental Engineering. His research focuses on geotechnical engineering and landslide risk, with applications in hazard assessment and safety."
+  },
+  {
+    "name": "Prof. Tad Gonsalves",
+    "affiliation": "Sophia University",
+    "country": "Japan",
+    "initials": "TG",
+    "bio": "Tad Gonsalves is a professor in Information and Communication Sciences. His research spans artificial intelligence, simulation engineering, evolutionary computation, and intelligent robotics."
+  },
+  {
+    "name": "Prof. Yutaka Arakawa",
+    "affiliation": "Kyushu University",
+    "country": "Japan",
+    "initials": "YA",
+    "bio": "Yutaka Arakawa is a professor whose research focuses on human activity recognition and systems that support behavior change. He co-leads the Japan–India LOTUS project on biofeedback-assisted storytelling in immersive environments."
+  },
+  {
+    "name": "Arjun Mehra",
+    "affiliation": "IIT Mandi",
+    "country": "India",
+    "initials": "AM",
+    "bio": "Arjun Mehra is a PhD student researching physiological feedback in virtual reality, with a focus on simulated high-risk tasks."
+  },
+  {
+    "name": "Dr. Kulbhushan Chand",
+    "affiliation": "IIT Mandi",
+    "country": "India",
+    "initials": "KC",
+    "bio": "Kulbhushan Chand is a postdoctoral fellow who has co-authored research on spatial navigation in virtual reality and physiological sensing during immersive tasks."
+  },
+  {
+    "name": "Sonam",
+    "affiliation": "IIT Mandi",
+    "country": "India",
+    "initials": "S",
+    "bio": "Sonam is a PhD student studying how to measure and modulate autonomic responses during simulated combat tasks in virtual reality."
+  },
+  {
+    "name": "Srishti Sharma",
+    "affiliation": "IIT Mandi",
+    "country": "India",
+    "initials": "SS",
+    "bio": "Srishti Sharma is a PhD student whose research examines how to assess route memory in virtual reality and use physiological sensing in immersive studies."
+  },
+  {
+    "name": "Malika Nagpal",
+    "affiliation": "IIT Mandi",
+    "country": "India",
+    "initials": "MN",
+    "bio": "Malika Nagpal is a PhD candidate whose research focuses on virtual reality and storytelling."
+  }
 ];
+
 export function formatDate(date, options = { month: "long", day: "numeric", year: "numeric" }) {
   return new Intl.DateTimeFormat("en-US", { ...options, timeZone: "UTC" }).format(new Date(date));
 }

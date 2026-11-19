@@ -156,9 +156,11 @@ section:focus, main:focus { outline: none; }
 .program-break { background: #eaf2ff; }
 
 .organizer-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.person-card { display: flex; gap: .85rem; align-items: center; min-height: 6rem; background: #fcfdff; }
+.person-card { background: #fcfdff; }
+.person-heading { display: flex; gap: .85rem; align-items: center; }
 .person-card h3 { font-size: 1.13rem; }
-.person-card p { font-size: .92rem; color: var(--muted); margin-top: .3rem; line-height: 1.4; }
+.person-affiliation { font-size: .92rem; color: var(--muted); margin-top: .3rem; line-height: 1.4; }
+.person-bio { font-size: .97rem; color: var(--muted); margin-top: 1rem; }
 .initials {
   display: grid; place-items: center; flex: none; width: 2.8rem; height: 2.8rem; border-radius: .48rem;
   color: #1b5497; border: 1px solid #cfdef3; background: linear-gradient(145deg,#e9f5ff,#ede9ff);
