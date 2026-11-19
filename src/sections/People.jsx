@@ -7,9 +7,9 @@ export function Organizers() {
     <section id="organizers" className="section" aria-labelledby="organizer-title" tabIndex={-1}>
       <div className="shell">
         <SectionHeading id="organizer-title" title="Organizing Committee" />
-        <ul className="organizer-grid">
+        <ul className="organizer-list" role="list">
           {organizers.map(({ name, affiliation, country, initials, bio }) => (
-            <li key={name} className="person-card">
+            <li key={name} className="person-row">
               <div className="person-heading">
                 <span className="initials" aria-hidden="true">{initials}</span>
                 <div><h3>{name}</h3><p className="person-affiliation">{affiliation}, {country}</p></div>
