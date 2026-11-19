@@ -147,7 +147,6 @@ section:focus, main:focus { outline: none; }
 .program-layout { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.5fr); gap: clamp(1.7rem, 6vw, 5.75rem); }
 .program-layout .section-heading { margin-bottom: 1.35rem; }
 .program-date { display: flex; align-items: center; gap: .6rem; color: var(--link); font-weight: 700; }
-.program-note { color: var(--muted); margin-top: .6rem; max-width: 25rem; }
 .program-list { border: 1px solid var(--line); background: white; border-radius: .65rem; overflow: hidden; }
 .program-row { display: grid; grid-template-columns: 7.2rem 1fr; gap: 1.12rem; align-items: center; min-height: 5.1rem; padding: .95rem 1.3rem; }
 .program-row + .program-row { border-top: 1px solid var(--line); }

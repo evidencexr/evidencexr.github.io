@@ -1,6 +1,6 @@
 import { CalendarDays, Info } from 'lucide-react';
 import SectionHeading from '../components/SectionHeading.jsx';
-import { dates, event, formatDate, program, workshopDate } from '../data/workshop.js';
+import { dates, formatDate, program, workshopDate } from '../data/workshop.js';
 
 export function ImportantDates() {
   return (
@@ -32,7 +32,6 @@ export function Program() {
         <div>
           <SectionHeading id="program-title" title="Preliminary Program" />
           <p className="program-date"><CalendarDays size={19} aria-hidden="true" /><time dateTime={workshopDate}>{formatDate(workshopDate)}</time></p>
-          <p className="program-note">{event.format}</p>
         </div>
         <ol className="program-list">
           {program.map(([start, end, title, kind]) => (

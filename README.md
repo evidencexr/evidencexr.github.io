@@ -32,7 +32,7 @@ The build pre-renders the workshop into `dist/index.html` for indexing and first
 
 Update [`src/data/workshop.js`](src/data/workshop.js) for event details, dates, CFP topics, paper categories, review guidance, program entries, organizer names and affiliations, and external links. Use YYYY-MM-DD for milestone dates and HH:mm for program start and end times. Edit `workshopDate` to update the workshop milestone, hero, program, footer, and search metadata together.
 
-Set `links.submission`, `links.registration`, and `links.template` to their verified public URLs as they become available. Empty values render a “coming soon” message. Update the dates and submission notices once the organizers confirm them. Update the format and preliminary program after conference approval and program confirmation.
+Set `links.submission`, `links.registration`, and `links.template` to their verified public URLs as they become available. Empty values render a “coming soon” message. Update the dates and submission notices once the organizers confirm them. Update the preliminary program once the schedule is confirmed.
 
 Layout and navigation live in `src/components/` and `src/sections/`. Theme styles are in `src/index.css`. Event metadata is generated from the same configuration as the visible workshop information.
 

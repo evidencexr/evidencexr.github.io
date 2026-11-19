@@ -6,7 +6,6 @@ export const event = {
   "location": "Ghent, Belgium",
   "edition": "First edition",
   "summary": "A research workshop on how evidence from human behavior and physiology can inform the design, evaluation, and adaptation of immersive systems.",
-  "format": "Half-day hybrid workshop proposed, subject to conference approval.",
   "contact": "varun@iitmandi.ac.in"
 };
 
