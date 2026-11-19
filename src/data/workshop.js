@@ -219,63 +219,99 @@ export const organizers = [
     "affiliation": "IIT Mandi",
     "country": "India",
     "initials": "VD",
-    "bio": "Varun Dutt is a professor in the School of Computing and Electrical Engineering and principal investigator of the Applied Cognitive Science Lab. His research spans cognitive modeling, human–computer interaction, and decision-making."
+    "bio": "Varun Dutt leads IIT Mandi’s Applied Cognitive Science Lab. He combines behavioral experiments with cognitive models to study decisions under risk and uncertainty. His work in virtual reality examines how feedback and repeated practice shape decision-making.",
+    "source": {
+      "label": "ResearchGate",
+      "url": "https://www.researchgate.net/profile/Varun-Dutt"
+    }
   },
   {
     "name": "Prof. K. V. Uday",
     "affiliation": "IIT Mandi",
     "country": "India",
     "initials": "KU",
-    "bio": "K. V. Uday is a professor in the School of Civil and Environmental Engineering. His research focuses on geotechnical engineering and landslide risk, with applications in hazard assessment and safety."
+    "bio": "K. V. Uday is a geotechnical engineering professor whose work focuses on landslide hazards. His projects use low-cost ground sensors and video to detect slope movement and develop early-warning systems for rainfall-triggered landslides.",
+    "source": {
+      "label": "Research projects",
+      "url": "https://scene.iitmandi.ac.in/faculty/projects/13"
+    }
   },
   {
     "name": "Prof. Tad Gonsalves",
     "affiliation": "Sophia University",
     "country": "Japan",
     "initials": "TG",
-    "bio": "Tad Gonsalves is a professor in Information and Communication Sciences. His research spans artificial intelligence, simulation engineering, evolutionary computation, and intelligent robotics."
+    "bio": "Tad Gonsalves is a professor of information and communication sciences. His research applies deep learning to speech emotion recognition and uses evolutionary and other optimization methods for problems in scheduling, routing, and robotics.",
+    "source": {
+      "label": "University research profile",
+      "url": "https://redb.cc.sophia.ac.jp/cvclients/researchers/tadgonsalves?achievement_type=published_papers&lang=en"
+    }
   },
   {
     "name": "Prof. Yutaka Arakawa",
     "affiliation": "Kyushu University",
     "country": "Japan",
     "initials": "YA",
-    "bio": "Yutaka Arakawa is a professor whose research focuses on human activity recognition and systems that support behavior change. He co-leads the Japan–India LOTUS project on biofeedback-assisted storytelling in immersive environments."
+    "bio": "Yutaka Arakawa studies how sensor data can reveal everyday activities and inform systems that support behavior change. He co-leads a Japan–India LOTUS project exploring comprehension and stress in immersive storytelling with biofeedback.",
+    "source": {
+      "label": "ResearchGate",
+      "url": "https://www.researchgate.net/profile/Yutaka-Arakawa"
+    }
   },
   {
     "name": "Arjun Mehra",
     "affiliation": "IIT Mandi",
     "country": "India",
     "initials": "AM",
-    "bio": "Arjun Mehra is a PhD student researching physiological feedback in virtual reality, with a focus on simulated high-risk tasks."
+    "bio": "Arjun Mehra is a PhD student studying human behavior and physiological responses in virtual reality. His published work examines how people respond to different landslide scenarios in immersive simulations.",
+    "source": {
+      "label": "Selected research",
+      "url": "https://www.scitepress.org/Papers/2025/132530/132530.pdf"
+    }
   },
   {
     "name": "Dr. Kulbhushan Chand",
     "affiliation": "IIT Mandi",
     "country": "India",
     "initials": "KC",
-    "bio": "Kulbhushan Chand is a postdoctoral fellow who has co-authored research on spatial navigation in virtual reality and physiological sensing during immersive tasks."
+    "bio": "Kulbhushan Chand is a Senior Project Scientist at IIT Mandi. His research uses wearable physiological sensors to develop biofeedback systems. He has also co-authored work that tests how immersive navigation tasks can assess route memory.",
+    "source": {
+      "label": "ResearchGate",
+      "url": "https://www.researchgate.net/profile/Kulbhushan-Chand"
+    }
   },
   {
     "name": "Sonam",
     "affiliation": "IIT Mandi",
     "country": "India",
     "initials": "S",
-    "bio": "Sonam is a PhD student studying how to measure and modulate autonomic responses during simulated combat tasks in virtual reality."
+    "bio": "Sonam is a PhD student studying physiological sensing and feedback in virtual reality. Her work includes a feasibility study of whether an immersive system can measure autonomic responses and use that information to guide feedback.",
+    "source": {
+      "label": "Selected research",
+      "url": "https://neuroxr-ws.github.io/www/"
+    }
   },
   {
     "name": "Srishti Sharma",
     "affiliation": "IIT Mandi",
     "country": "India",
     "initials": "SS",
-    "bio": "Srishti Sharma is a PhD student whose research examines how to assess route memory in virtual reality and use physiological sensing in immersive studies."
+    "bio": "Srishti Sharma is a PhD student studying spatial navigation and route memory in virtual reality. Her work includes comparing an immersive navigation task with the Groton Maze Learning Test to assess how well it measures route learning.",
+    "source": {
+      "label": "Selected research",
+      "url": "https://www.researchgate.net/publication/410840901_Validation-First_NeuroXR_Immersive_VR_Spatial_Navigation_for_Route-_Memory_Assessment_Against_the_Groton_Maze_Learning_Test"
+    }
   },
   {
     "name": "Malika Nagpal",
     "affiliation": "IIT Mandi",
     "country": "India",
     "initials": "MN",
-    "bio": "Malika Nagpal is a PhD candidate whose research focuses on virtual reality and storytelling."
+    "bio": "Malika Nagpal is a PhD candidate who studies how people understand stories delivered through different media. Her research compares reading, social robots, and virtual reality to examine how each affects narrative comprehension and mental effort.",
+    "source": {
+      "label": "Selected research",
+      "url": "https://app.ait.kyushu-u.ac.jp/archives/2026-11-13-matrixai2026-lotus/"
+    }
   }
 ];
 
