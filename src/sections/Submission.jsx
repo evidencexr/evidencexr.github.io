@@ -42,7 +42,7 @@ export default function Submission() {
             <h3 id="submit-panel-title">Submit Your Paper</h3>
             {!links.submission && <p>{submission.platform}</p>}
             {links.submission
-              ? <a className="button button-accent" href={links.submission}>Submit your paper</a>
+              ? <a className="button button-accent" href={links.submission}>Submit via HotCRP</a>
               : <p className="pending">Submission link coming soon</p>}
             <ul className="resource-list">
               <Resource icon={FileText} label="ACM paper template" url={links.template} pending="Template link coming soon" />

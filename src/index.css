@@ -98,7 +98,7 @@ section:focus, main:focus { outline: none; }
 .eyebrow { color: var(--link); font-size: .875rem; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; margin-bottom: .7rem; }
 .section-copy { color: var(--muted); max-width: 39rem; }
 .section-copy p + p { margin-top: .85rem; }
-.text-link { color: var(--link); font-weight: 700; display: inline-block; margin-top: .75rem; }
+.text-link { color: var(--link); font-weight: 700; }
 .text-link:hover, .footer a:hover, .resource-list a:hover { text-decoration: underline; text-underline-offset: .2em; }
 
 .theme-grid, .topic-grid, .date-grid, .paper-grid { display: grid; gap: .9rem; }
@@ -181,6 +181,7 @@ section:focus, main:focus { outline: none; }
 .footer-main nav { display: grid; grid-template-columns: repeat(2, max-content); gap: .25rem 2rem; align-content: start; }
 .footer-title { margin-top: .75rem; color: #dae7f7; font-weight: 650; }
 .footer-end { margin-top: 1.65rem; padding-top: 1rem; border-top: 1px solid var(--dark-line); }
+.footer-contacts { display: flex; flex-wrap: wrap; gap: .35rem 1rem; }
 .footer-end a { color: #b4eaf0; }
 .back-to-top {
   position: fixed; right: 1.3rem; bottom: 1.3rem; z-index: 10; display: grid; place-items: center; width: 2.85rem; height: 2.85rem;

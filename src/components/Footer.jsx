@@ -18,7 +18,9 @@ export default function Footer() {
         </div>
         <div className="footer-end">
           <p>© {event.year} {event.name} Workshop Organizing Committee</p>
-          <a href={'mailto:' + event.contact}>{event.contact}</a>
+          <div className="footer-contacts">
+            {event.contacts.map((email) => <a key={email} href={'mailto:' + email}>{email}</a>)}
+          </div>
         </div>
       </div>
     </footer>

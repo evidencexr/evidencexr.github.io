@@ -1,6 +1,6 @@
 import { Activity, Boxes, Brain, CircuitBoard, Compass, FlaskConical, Focus, Layers3, MessagesSquare, SlidersHorizontal, Waypoints } from 'lucide-react';
 import SectionHeading from '../components/SectionHeading.jsx';
-import { about, cfp } from '../data/workshop.js';
+import { about, cfp, links } from '../data/workshop.js';
 
 const themeIcons = [Brain, Activity, SlidersHorizontal, Layers3];
 const topicIcons = [Brain, Activity, CircuitBoard, MessagesSquare, Compass, Boxes, FlaskConical];
@@ -30,7 +30,13 @@ export function CallForPapers() {
       <div className="shell">
         <div className="section-intro">
           <SectionHeading id="cfp-title" title="Call for Papers" />
-          <div className="section-copy"><p>{cfp.intro}</p><a className="text-link" href="#submission">View submission guidelines</a></div>
+          <div className="section-copy">
+            <p>{cfp.intro}</p>
+            <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2">
+              {links.submission && <a className="button button-accent" href={links.submission}>Submit via HotCRP</a>}
+              <a className="text-link" href="#submission">View submission guidelines</a>
+            </div>
+          </div>
         </div>
         <ul className="topic-grid">
           {cfp.topics.map(([name, description], index) => {

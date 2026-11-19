@@ -6,12 +6,15 @@ export const event = {
   "location": "Ghent, Belgium",
   "edition": "First edition",
   "summary": "A research workshop on how evidence from human behavior and physiology can inform the design, evaluation, and adaptation of immersive systems.",
-  "contact": "varun@iitmandi.ac.in"
+  "contacts": [
+    "varun@iitmandi.ac.in",
+    "acslab@iitmandi.ac.in"
+  ]
 };
 
 export const links = {
   "conference": "https://2027.acmmmsys.org/",
-  "submission": "",
+  "submission": "https://evidencexr27.hotcrp.com/",
   "registration": "",
   "template": ""
 };

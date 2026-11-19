@@ -32,7 +32,11 @@ export function Contact() {
           <p>For questions about the workshop, submissions, or participation, email the organizing team.</p>
         </div>
         <div className="contact-links">
-          <a className="button button-accent" href={'mailto:' + event.contact}><Mail size={19} aria-hidden="true" />{event.contact}</a>
+          {event.contacts.map((email) => (
+            <a key={email} className="button button-accent" href={'mailto:' + email}>
+              <Mail size={19} aria-hidden="true" />{email}
+            </a>
+          ))}
           <a className="button button-outline-light" href={links.conference}>{event.conference} website</a>
         </div>
       </div>
