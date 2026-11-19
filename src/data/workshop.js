@@ -268,7 +268,7 @@ export const organizers = [
     "affiliation": "IIT Mandi",
     "country": "India",
     "initials": "SS",
-    "bio": "Srishti Sharma is a PhD student studying spatial navigation and route memory in virtual reality. Her work includes comparing an immersive navigation task with the Groton Maze Learning Test to assess how well it measures route learning."
+    "bio": "Srishti Sharma is a PhD student studying spatial navigation and route memory in virtual reality. Her work includes comparing an immersive cognitive task with traditional tasks."
   },
   {
     "name": "Malika Nagpal",
