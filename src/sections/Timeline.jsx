@@ -8,7 +8,7 @@ export function ImportantDates() {
       <div className="shell">
         <SectionHeading id="dates-title" title="Important Dates" />
         <ul className="date-grid">
-          {dates.milestones.map(([title, date]) => (
+          {dates.milestones.map(([title, date, zone]) => (
             <li key={title} className={title === 'Workshop' ? 'date-card workshop-date' : 'date-card'}>
               <CalendarDays size={20} aria-hidden="true" />
               <time dateTime={date}>
@@ -16,6 +16,7 @@ export function ImportantDates() {
                 <span>{formatDate(date, { year: 'numeric' })}</span>
               </time>
               <h3>{title}</h3>
+              {zone && <abbr className="date-zone" title={dates.timeZones[zone]}>{zone}</abbr>}
             </li>
           ))}
         </ul>

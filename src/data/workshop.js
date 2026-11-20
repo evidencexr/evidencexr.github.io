@@ -116,18 +116,24 @@ export const workshopDate = "2027-04-02";
 
 export const dates = {
   "notice": "Submission deadlines are subject to final confirmation.",
+  "timeZones": {
+    "AoE": "Anywhere on Earth"
+  },
   "milestones": [
     [
       "Paper Submission",
-      "2027-01-11"
+      "2027-01-11",
+      "AoE"
     ],
     [
       "Paper Notification",
-      "2027-02-01"
+      "2027-02-01",
+      "AoE"
     ],
     [
       "Camera-Ready Submission",
-      "2027-02-19"
+      "2027-02-19",
+      "AoE"
     ],
     [
       "Workshop",
