@@ -129,8 +129,6 @@ section:focus, main:focus { outline: none; }
 }
 .workshop-date { border-color: #4b9fa9; background: #122e44; }
 .workshop-date time strong, .workshop-date > svg { color: var(--highlight); }
-.date-note { display: flex; align-items: center; gap: .62rem; margin-top: 1.2rem; color: var(--dark-text); font-size: .9rem; }
-.date-note svg { color: var(--highlight); flex: none; }
 .submission-layout { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 1.2rem; align-items: start; }
 .paper-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .paper-card .page-limit { color: var(--link); font-size: .91rem; }

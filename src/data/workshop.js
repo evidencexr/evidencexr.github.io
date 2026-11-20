@@ -115,7 +115,6 @@ export const cfp = {
 export const workshopDate = "2027-04-02";
 
 export const dates = {
-  "notice": "Submission deadlines are subject to final confirmation.",
   "timeZones": {
     "AoE": "Anywhere on Earth"
   },

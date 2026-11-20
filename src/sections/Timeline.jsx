@@ -1,4 +1,4 @@
-import { CalendarDays, Info } from 'lucide-react';
+import { CalendarDays } from 'lucide-react';
 import SectionHeading from '../components/SectionHeading.jsx';
 import { dates, formatDate, program, workshopDate } from '../data/workshop.js';
 
@@ -20,7 +20,6 @@ export function ImportantDates() {
             </li>
           ))}
         </ul>
-        {dates.notice && <p className="date-note"><Info size={17} aria-hidden="true" />{dates.notice}</p>}
       </div>
     </section>
   );
