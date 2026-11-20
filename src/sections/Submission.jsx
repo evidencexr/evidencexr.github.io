@@ -34,8 +34,15 @@ export default function Submission() {
               ))}
             </div>
             <dl className="submission-guidance">
-              {submission.guidance.map(([name, description]) => (
-                <div key={name}><dt>{name}</dt><dd>{description}</dd></div>
+              {submission.guidance.map(({ title, description, example, reference }) => (
+                <div key={title}>
+                  <dt>{title}</dt>
+                  <dd>
+                    <p>{description}</p>
+                    {example && <code className="submission-example">{example}</code>}
+                    {reference && <p><a className="submission-reference" href={reference.url}>{reference.label}</a></p>}
+                  </dd>
+                </div>
               ))}
             </dl>
           </div>

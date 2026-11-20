@@ -134,6 +134,11 @@ section:focus, main:focus { outline: none; }
 .submission-guidance > div { padding-block: .85rem; border-bottom: 1px solid var(--line); }
 .submission-guidance dt { font-weight: 700; }
 .submission-guidance dd { color: var(--muted); margin-top: .15rem; }
+.submission-example {
+  display: inline-block; max-width: 100%; margin-top: .55rem; padding: .32rem .6rem; border: 1px solid var(--line);
+  border-radius: .35rem; background: var(--color-paper); color: var(--ink); font-size: .85rem; overflow-wrap: anywhere;
+}
+.submission-reference { display: inline-block; margin-top: .45rem; color: var(--link); font-weight: 650; text-decoration: underline; text-underline-offset: .2em; }
 .submit-panel { background: #101f38; border: 1px solid var(--dark-line); color: white; padding: clamp(1.25rem, 2.8vw, 2rem); border-radius: .65rem; }
 .submit-panel h3 { font-size: 1.85rem; }
 .submit-panel p { color: var(--dark-text); margin-top: .5rem; }

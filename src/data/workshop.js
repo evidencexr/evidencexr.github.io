@@ -137,7 +137,7 @@ export const dates = {
 };
 
 export const submission = {
-  "notice": "Final ACM formatting, page limits, and submission instructions are subject to organizer confirmation.",
+  "notice": "The page limits, manuscript format, and review process below are provisional and subject to organizer confirmation.",
   "platform": "Submissions are expected to open through HotCRP.",
   "categories": [
     [
@@ -152,22 +152,51 @@ export const submission = {
     ]
   ],
   "guidance": [
-    [
-      "Research and evaluation",
-      "State your research question and contribution, explain your methods and evaluation, and report limitations. Distinguish planned work from completed results."
-    ],
-    [
-      "Ethics and consent",
-      "For research involving human participants, report applicable ethics approval and consent."
-    ],
-    [
-      "Proposed peer review",
-      "The proposal calls for double-blind review with at least two independent reviews per paper and conflict-free handling of organizer submissions."
-    ],
-    [
-      "Publication",
-      "Accepted papers will be presented in a paper session and published in the ACM MMSys Workshop Proceedings in the ACM Digital Library, subject to ACM and conference publication requirements."
-    ]
+    {
+      "title": "PDF and ACM format",
+      "description": "Prepare a PDF in the two-column ACM proceedings format. For an anonymous LaTeX review draft, use the acmart class with these options.",
+      "example": "\\documentclass[sigconf,review,anonymous]{acmart}",
+      "reference": {
+        "label": "Official ACM LaTeX proceedings template",
+        "url": "https://www.overleaf.com/latex/templates/acm-conference-proceedings-new-master-template/pnrfvrrdbfwt"
+      }
+    },
+    {
+      "title": "Anonymization",
+      "description": "Omit author names, affiliations, and identifying acknowledgments from the review draft. Cite your own prior work in the third person, and check the PDF metadata and any supplementary files for identifying details."
+    },
+    {
+      "title": "Originality and prior work",
+      "description": "Submit original work that is not under review elsewhere. Cite relevant prior publications and explain the relationship between them and your submission."
+    },
+    {
+      "title": "Authorship and use of AI",
+      "description": "Ensure that all listed authors meet ACM’s authorship criteria and take responsibility for the paper. Describe in the methods section how any AI tools were used in the research when their use is directly relevant to the conclusions.",
+      "reference": {
+        "label": "ACM MMSys 2027 authorship and AI guidance",
+        "url": "https://2027.acmmmsys.org/research-track.html"
+      }
+    },
+    {
+      "title": "Research and evaluation",
+      "description": "State the research question and contribution, describe the system or task, and explain the methods and evaluation. Report limitations and distinguish planned work from completed results."
+    },
+    {
+      "title": "Ethics and consent",
+      "description": "For research involving human participants, report applicable ethics approval and informed consent. Where relevant, explain how you protected participant privacy and handled sensitive data."
+    },
+    {
+      "title": "Proposed peer review",
+      "description": "The workshop proposes double-anonymous peer review with at least two independent reviews per paper. Submissions from organizers will be handled by a coordinator without a conflict of interest."
+    },
+    {
+      "title": "Presentation and publication",
+      "description": "Accepted papers will be presented at the workshop and included in the ACM MMSys 2027 Workshop Proceedings in the ACM Digital Library, subject to ACM and conference publication requirements.",
+      "reference": {
+        "label": "ACM MMSys 2027 workshop publication information",
+        "url": "https://2027.acmmmsys.org/workshop-track.html"
+      }
+    }
   ]
 };
 
